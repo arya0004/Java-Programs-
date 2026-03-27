@@ -1,0 +1,68 @@
+public class Participants {
+    private static int counter = 1001;  
+    private String registrationId;
+    private String name; 
+    private long contNum;
+    private String branch;
+
+   
+ Participants(String name, long contNum, String branch) {
+        this.name = name;
+        this.contNum = contNum;
+        this.branch = branch;
+        this.registrationId = "D" + counter;
+        counter++;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getContNum() {
+        return contNum;
+    }
+
+    public void setContNum(long contNum) {
+        this.contNum = contNum;
+    }
+
+  
+    public String getBranch() {
+        return branch;
+    }
+
+    public void setBranch(String branch) {
+        this.branch = branch;
+    }
+
+
+    public String getRegistrationId() {
+        return registrationId;
+    }
+
+    public void setRegistrationId(String registrationId) {
+        this.registrationId = registrationId;
+    }
+
+   
+    public static int getCounter() {
+        return counter;
+    }
+
+    public static void setCounter(int counter) {
+        Participants.counter = counter;
+    }
+
+    public static void main(String[] args) {
+        Participants s1 = new Participants("Arya", 12345678, "AIDS");
+        Participants s2 = new Participants("Aarya", 12345678, "COMP");
+
+        System.out.println("Hi " + s1.getName() + "! Your registration id is " + s1.getRegistrationId());
+        System.out.println("Hi " + s2.getName() + "! Your registration id is " + s2.getRegistrationId());
+    }
+}
