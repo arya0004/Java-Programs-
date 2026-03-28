@@ -4,7 +4,8 @@ Basic to intermediate-level Java question solutions.
 ---
 ## 📂 Structure
 - `assignments/` → College assignments and practice programs  
-- `24-25 sample questions/` → Solved questions and exercises  
+- `24-25 sample questions/` → Solved questions and exercises
+- Question word doc  
 ---
 ## Topics Covered
 - File Handling  
